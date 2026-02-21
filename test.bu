@@ -1,0 +1,14 @@
+variant: fcos
+version: 1.6.0
+
+passwd:
+  users:
+    - name: core
+      password_hash: "$6$DwvByPqtvpY615od$InmsALzd4GnrqSLpJk3Yl0EOSScItDubudf2UolVJ5UbGCV2osVoO40N3JGPLjduz8Dfze05.tyAjo/uk5a240"
+
+storage:
+  disks:
+    - device: /dev/disk/by-id/coreos-boot-disk
+      partitions:
+        - number: 3
+          resize: true
